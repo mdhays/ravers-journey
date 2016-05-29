@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RaversJourney
 {
-    interface IDisplayName
+    public interface IDisplayName
     {
         void DisplayName();
     }

@@ -8,10 +8,7 @@ namespace RaversJourney
 {
     class House : Genres
     {
-        public string Name { get; set; }
-        public int Health { get; set; }
+        Random levelUpRNG = new Random();
         public int Attack { get; set; }
-        public int Defense { get; set; }
-
     }
 }

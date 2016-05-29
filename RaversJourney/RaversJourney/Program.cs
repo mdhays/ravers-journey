@@ -42,13 +42,19 @@ namespace RaversJourney
             switch (convertedUserSelection)
             {
                 case 1:
+                    Trance player = new Trance();
                     Console.WriteLine(s + trance);
+                    player.PlayerGenre = "Trance Light Mage";
+                    player.Level = 1;
+                    player.Health = 12;
+                    player.Intelligence = 10;
+                    player.Defense = 5;
+                    player.Speed = 10;
+                    player.DisplayName();
                     break;
-
                 case 2:
                     Console.WriteLine(s + dubstep);
                     break;
-
                 case 3:
                     Console.WriteLine(s + trap);
                     break;
@@ -66,7 +72,11 @@ namespace RaversJourney
                     break;
             }
 
+            
+
             Console.ReadLine();
+
+
 
         }
     }
