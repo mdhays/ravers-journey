@@ -10,8 +10,9 @@ namespace RaversJourney
     {
 
         static void Main(string[] args)
-        {  
+        {
             // classes
+            Genres Player = null;
             string trance = " Trance(Light Mage)";
             string dubstep = " Dubstep (Warrior Melee)";
             string trap = " Trap (Heavy Ranger)";
@@ -42,17 +43,16 @@ namespace RaversJourney
             switch (convertedUserSelection)
             {
                 case 1:
-                    Trance player = new Trance();
+
+                    Player = new Trance();
+
                     Console.WriteLine(s + trance);
-                    player.PlayerGenre = "Trance Light Mage";
-                    player.Level = 1;
-                    player.Health = 12;
-                    player.Intelligence = 10;
-                    player.Defense = 5;
-                    player.Speed = 10;
-                    player.DisplayName();
+
+                    Player.DisplayName();
+
                     break;
                 case 2:
+
                     Console.WriteLine(s + dubstep);
                     break;
                 case 3:
@@ -72,11 +72,26 @@ namespace RaversJourney
                     break;
             }
 
-            
+            Console.WriteLine(Player);
+            Console.WriteLine("");
+            Console.WriteLine("When you are ready to begin your adventure, press ENTER...");
 
             Console.ReadLine();
 
+            Console.WriteLine("What is your stage name, fam?");
 
+            string n = Player.Name;
+
+            n = Console.ReadLine();
+
+            Player.DisplayName();
+
+            Console.WriteLine("");
+            Console.WriteLine("Welcome to Ravers Journey " + n + "!" + "If everything looks good, press Enter");
+
+            Console.WriteLine("In an alternate universe, the year is 2100. Mankind has been plunged into chaos as DJs have taken over the world. The DJ Mag Top 100 now determines an indivdual's social status. In order to claim a member's spot, you must defeat them in a battle of beats.");
+
+            Console.ReadLine();
 
         }
     }

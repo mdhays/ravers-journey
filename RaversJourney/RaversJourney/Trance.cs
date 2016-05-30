@@ -11,10 +11,18 @@ namespace RaversJourney
         Random levelUpRNG = new Random();
         public int Intelligence { get; set; }
 
+
         public override void DisplayName()
         {
+            PlayerGenre = "Trance Light Mage";
+            Level = 1;
+            Health = 12;
+            Intelligence = 10;
+            Defense = 5;
+            Speed = 10;
+
+
             Console.WriteLine("");
-            Console.WriteLine("Name: " + Name);
             Console.WriteLine("Genre: " + PlayerGenre);
             Console.WriteLine("Level: " + Level);
             Console.WriteLine("Health: " + Health);
