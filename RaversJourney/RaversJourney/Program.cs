@@ -73,10 +73,6 @@ namespace RaversJourney
             }
 
             Console.WriteLine(Player);
-            Console.WriteLine("");
-            Console.WriteLine("When you are ready to begin your adventure, press ENTER...");
-
-            Console.ReadLine();
 
             Console.WriteLine("What is your stage name, fam?");
 
@@ -87,11 +83,16 @@ namespace RaversJourney
             Player.DisplayName();
 
             Console.WriteLine("");
-            Console.WriteLine("Welcome to Ravers Journey " + n + "!" + "If everything looks good, press Enter");
-
-            Console.WriteLine("In an alternate universe, the year is 2100. Mankind has been plunged into chaos as DJs have taken over the world. The DJ Mag Top 100 now determines an indivdual's social status. In order to claim a member's spot, you must defeat them in a battle of beats.");
+            Console.WriteLine("Welcome to Ravers Journey " + n + "! " + "If everything looks good, press Enter...");
 
             Console.ReadLine();
+
+            Console.WriteLine("In an alternate universe, the year is 2100. Mankind has been plunged into chaos as faschist DJs have taken over the world. The DJ Mag Top 100 now determines an indivdual's social status. In order to claim a member's spot, you must defeat them in a battle of beats.");
+            Console.WriteLine("Democracy is dead, votes used to be cast to show who was the best DJ. Now, one hero will attempt to become number one on a useless countdown to free mankind from the chaos of the wretched Top 100, and restore democracy to the world.");
+
+            Console.ReadLine();
+
+
 
         }
     }
