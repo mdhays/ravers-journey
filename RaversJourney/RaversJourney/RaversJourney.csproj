@@ -44,11 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dubstep.cs" />
+    <Compile Include="Enemy.cs" />
     <Compile Include="Genres.cs" />
     <Compile Include="House.cs" />
     <Compile Include="IDisplayName.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Text.cs" />
     <Compile Include="Trance.cs" />
     <Compile Include="Trap.cs" />
   </ItemGroup>
