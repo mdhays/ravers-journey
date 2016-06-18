@@ -14,6 +14,8 @@ namespace RaversJourney
             Text Script = new Text();
 
             Script.Intro();
+            Console.ReadLine();
+            Script.Chapter1();
         }
     }
 }

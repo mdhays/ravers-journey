@@ -8,23 +8,18 @@ namespace RaversJourney
 {
     class Text
     {
-        // classes
         Genres Player = null;
-        internal string trance = " Trance(Light Mage)";
-        internal string dubstep = " Dubstep (Warrior Melee)";
-        internal string trap = " Trap (Heavy Ranger)";
-        internal string dnb = "Drum & Bass(Dark Mage)";
-        internal string house = " House (Thief Melee)";
-        internal string hardcore = " Hardcore (Light Ranger)";
+        private string trance = " Trance(Light Mage)";
+        private string dubstep = " Dubstep (Warrior Melee)";
+        private string trap = " Trap (Heavy Ranger)";
+        private string dnb = "Drum & Bass(Dark Mage)";
+        private string house = " House (Thief Melee)";
+        private string hardcore = " Hardcore (Light Ranger)";
+        private string s = "You have selected the class:";
+        private string userSelection;
+        private string name;
+        private int convertedUserSelection;
 
-        // assign text to a string since it will be used multiple times.
-        internal string s = "You have selected the class:";
-
-        // for holding selected values
-        internal string userSelection;
-        internal int convertedUserSelection;
-
-        //space
         private void Space()
         {
             Console.WriteLine("");
@@ -79,19 +74,27 @@ namespace RaversJourney
 
             Console.WriteLine(Player);
 
-            Console.WriteLine("What is your stage name, fam?");
+            Console.WriteLine("What is your stage name?");
 
             string n = Player.Name;
-
-            n = Console.ReadLine();
+            name = n;
+            name = Console.ReadLine();
 
             Player.DisplayName();
 
             Space();
-            Console.WriteLine("Welcome to Ravers Journey " + n + "! " + "If everything looks good, press Enter...");
+            Console.WriteLine("Welcome to Ravers Journey " + name + "! " + "If everything looks good, press Enter...");
             Console.ReadLine();
-            Console.WriteLine("In an alternate universe, the year is 2100. Mankind has been plunged into chaos as faschist DJs have taken over the world. The DJ Mag Top 100 now determines an indivdual's social status. In order to claim a member's spot, you must defeat them in a battle of beats.");
-            Console.WriteLine("Democracy is dead, votes used to be cast to show who was the best DJ. Now, one hero will attempt to become number one on a useless countdown to free mankind from the chaos of the wretched Top 100, and restore democracy to the world.");
+            Console.WriteLine("In an alternate universe, the year is 2047. Mankind has been plunged into chaos as faschist DJs controlled by the Illuminate (also known as the \"Dank Ones\") have taken over the world. The DJ Mag Top 100 now determines an indivdual's social status. In order to claim a member's spot, you must defeat them in a battle of beats.");
+            Console.WriteLine("Democracy is dead, votes used to be cast to show who was the best DJ. Now, one hero will attempt to become number one on a useless countdown to free mankind from the chaos of the wretched Top 10 DJs, and restore freedom to the world.");
+            Console.ReadLine();
+            Space();
+        }
+
+        internal void Chapter1()
+        {
+            Console.WriteLine("Our story begins on the Spanish island of Ibiza. " + name + " has just arrived to play a show at one of the most exclusive nightclubs in the world. However, his true purpose for coming to the island is to challenge Number 10 DJ, Dillon Francis, and begin to gather the recognition needed to challenge others that stand in his way. Confident and without fear, Dillon accepted the challenge, eager to show his loyalty and power to the Dank Ones.");
+            Space();
             Console.ReadLine();
         }
     }
